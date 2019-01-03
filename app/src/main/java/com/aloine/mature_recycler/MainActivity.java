@@ -4,8 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
 import com.aloine.mature_recycler.adapter.Adapter;
+import com.aloine.mature_recycler.contract.ExpertsClickListener;
 import com.aloine.mature_recycler.model.Datas;
 import com.aloine.mature_recycler.model.Model;
 
@@ -23,9 +26,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mList = Datas.MODEL;
         mRecyclerView = findViewById(R.id.recycler_view);
-        mAdapter = new Adapter(this, mList);
+       // mAdapter = new Adapter(this, mList);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
-        mRecyclerView.setAdapter(mAdapter);
+        setAdapter();
+      //  mRecyclerView.setAdapter(mAdapter);
 
+    }
+
+    private void setAdapter() {
+        ExpertsClickListener expertsClickListener = new ExpertsClickListener() {
+            @Override
+            public void showDetails(Model model) {
+                model.getName();
+              Toast.makeText(MainActivity.this, model.getName(), Toast.LENGTH_SHORT).show();
+            }
+
+
+        };
+        mAdapter = new Adapter(mList,expertsClickListener);
+        mRecyclerView.setAdapter(mAdapter);
     }
 }
