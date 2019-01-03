@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Mature_recycler</string>
+    <string name="app_name">GDE Android</string>
+    <string name="country_one">Johannesburg, South Africa</string>
+    <string name="description_one">Rebecca is an Android Developer based in Johannesburg, South Africa. She studied Information Technology at the University of Johannesburg.\n\nShe loves making apps that are beautiful and responsive.\n\nIn her spare time she can be found working on an open source app \"Book Dash\" which contains free children\'s books in different African languages. Other than her love for Android development, Rebecca loves to bake in her spare time and is constantly on the hunt for the best lemon meringue.</string>
+    <string name="name_one">Rebecca Franks</string>
+    <string name="name_two">Marcelo Ricardo Quinta</string>
+    <string name="country_two">Goiânia, Brazil</string>
+    <string name="description_two">Marcelo co-founded and worked at Triangulum Solucoes, in the Brazilian midwest, and has a Masters in Computer Science.\n\nToday, he is Software Engineering professor at Universidade Federal de Goiás, where he teaches in graduate, post-graduate and extension courses, as well as working with innovation projects. Deeply involved with the community, Marcelo is GDG Goiania organiser, a frequent public speaker, and also holds the "Intel Innovator" badge.</string>
+    <string name="name_three">Cyril Mottier</string>
+    <string name="country_three">Lyon, France</string>
+    <string name="description_three">"Cyril is a dedicated Android developer, designer and writer.\n\nHe\'s worked on a huge variety of mobile projects across UI, UX, software architecture, and many more.\n\nCyril is also passionate about technology and design and can turn his diverse engineering and Android skills to any problem that needs solving.\n\nHe\'s actively involved in the Android community too – writing blog posts, creating open source libraries, and giving talks around the word..\n\nCyril\'s motto is \“Do less, but do it insanely great\”. He is often considered a perfectionist, but prefers seeing himself as a pixel lover!"</string>
 </resources>
